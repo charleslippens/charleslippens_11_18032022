@@ -1,0 +1,25 @@
+.footer-logo {
+	height: 2.25rem;
+	margin-top: 3.75rem;
+}
+
+.footer-wrapper {
+	height: 12.5rem;
+	margin-top: auto;
+	background-color: #000000;
+	color: #ffffff;
+	text-align: center;
+}
+
+.footer-credits {
+	margin-top: 2.5rem;
+	font-size: 0.75rem;
+	font-weight: 500;
+}
+
+@media only screen and (min-width: 768px) {
+	.footer-credits {
+		margin-top: 1.9375rem;
+		font-size: 1.5rem;
+	}
+}

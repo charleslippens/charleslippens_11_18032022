@@ -1,0 +1,74 @@
+.banner {
+	position: relative;
+	margin: 0 auto;
+	margin-bottom: 1.375rem;
+}
+
+.banner-title {
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	top: 50%;
+	left: 1rem;
+	width: 66%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	color: #ffffff;
+	font-size: 1.5rem;
+	font-weight: 500;
+	line-height: 100%;
+}
+
+.banner-img {
+	width: 100%;
+	height: 6.9375rem;
+	-o-object-fit: cover;
+	object-fit: cover;
+	border-radius: 0.625rem;
+	-webkit-filter: brightness(70%);
+	filter: brightness(70%);
+}
+
+@media only screen and (min-width: 768px) {
+	.home {
+		padding-bottom: 2.6875rem;
+	}
+
+	.cardhousing-wrapper {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-flow: row wrap;
+		flex-flow: row wrap;
+		justify-content: space-evenly;
+		margin: 0 auto;
+		padding-top: 3.5rem;
+		padding-bottom: 0;
+		row-gap: 3.125rem;
+		border-radius: 1.5625rem;
+		background: #f7f7f7;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-webkit-box-pack: space-evenly;
+		-ms-flex-pack: space-evenly;
+	}
+	.banner {
+		margin-bottom: 2.6875rem;
+	}
+
+	.banner-title {
+		width: 100%;
+		font-size: 3rem;
+		text-align: center;
+	}
+
+	.banner-img {
+		height: 13.9375rem;
+	}
+
+	.fill-empty-space {
+		width: 21.25rem;
+		height: 0;
+	}
+}
