@@ -1,4 +1,11 @@
-# Getting Started with Create React App
+## Définissez les besoins pour une app de soutien scolaire
+
+- Initilisation Create React App
+- Développement Home page (structure, composants, style CSS, responsive etc)
+- Développement Pages A Propos, Logements (en cours)
+
+
+##  Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
