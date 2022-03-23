@@ -2,9 +2,13 @@
 
 
 - Initilisation Create React App
-- Développement Home page (structure, composants, style CSS, responsive etc)
-- Développement Pages A Propos, Logements (en cours)
+- Développement Home page (structure, développemnt des composants, page, styles CSS, responsive etc...)
+- Développement des pages A Propos, Logements, Erreur 404 et des composants associés(en cours)
+- Utilisation SASS?
 
+##  Outils et contraintes techniques
+
+https://course.oc-static.com/projects/Front-End+V2/P9+React+1/Coding+guidelines+Kasa+FR.pdf
 
 ##  Getting Started with Create React App
 
