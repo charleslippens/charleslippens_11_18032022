@@ -1,4 +1,5 @@
-## Définissez les besoins pour une app de soutien scolaire
+## Développez une application Web avec React et React Router
+
 
 - Initilisation Create React App
 - Développement Home page (structure, composants, style CSS, responsive etc)
