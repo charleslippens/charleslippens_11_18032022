@@ -4,7 +4,7 @@
 - Initilisation Create React App
 - Développement Home page (structure, développemnt des composants, page, styles CSS, responsive etc...)
 - Développement des pages A Propos, Logements, Erreur 404 et des composants associés(en cours)
-- Utilisation SASS?
+- Optionel: Utilisation SASS?
 
 ##  Outils et contraintes techniques
 
