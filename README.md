@@ -16,7 +16,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
-### `npm install` on root directory ./charleslippens_11_18032022
+### `npm install` on front folder (root front folder/directory)
 
 Install packages and dependencies
 
