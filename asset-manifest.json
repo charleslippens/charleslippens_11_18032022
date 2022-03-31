@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/charleslippens_11_18032022/static/css/main.9d2a9371.css",
-    "main.js": "/charleslippens_11_18032022/static/js/main.26aaa8fb.js",
+    "main.js": "/charleslippens_11_18032022/static/js/main.4c0779a7.js",
     "static/media/About_banner.jpg": "/charleslippens_11_18032022/static/media/About_banner.434ba524c88681a7754d.jpg",
     "static/media/Home_banner.jpg": "/charleslippens_11_18032022/static/media/Home_banner.8dbc3e4ffb4f7b0b3bc8.jpg",
     "static/media/Logo_Kasa.svg": "/charleslippens_11_18032022/static/media/Logo_Kasa.a6101328193bb3191cbcb50c120ec0d1.svg",
@@ -11,10 +11,10 @@
     "static/media/Apres.svg": "/charleslippens_11_18032022/static/media/Apres.88153a5d119c2744ffe34dca1ef843df.svg",
     "static/media/Avant.svg": "/charleslippens_11_18032022/static/media/Avant.19918a1634b1441a25ae0b50e6b1f85b.svg",
     "main.9d2a9371.css.map": "/charleslippens_11_18032022/static/css/main.9d2a9371.css.map",
-    "main.26aaa8fb.js.map": "/charleslippens_11_18032022/static/js/main.26aaa8fb.js.map"
+    "main.4c0779a7.js.map": "/charleslippens_11_18032022/static/js/main.4c0779a7.js.map"
   },
   "entrypoints": [
     "static/css/main.9d2a9371.css",
-    "static/js/main.26aaa8fb.js"
+    "static/js/main.4c0779a7.js"
   ]
 }
