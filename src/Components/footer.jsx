@@ -1,5 +1,5 @@
-import logo from "../../Assets/Logo_White.svg";
-import "./style.css";
+import logo from "../Assets/Logo_White.svg";
+import "../Styling/footer.css";
 // Composant fonctionnel
 function Footer() {
 	return (

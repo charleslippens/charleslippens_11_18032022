@@ -1,0 +1,56 @@
+.err404 {
+	text-align: center;
+}
+
+.err404-subtitle {
+	margin: 0 auto;
+	margin-top: 0.625rem;
+	color: #ff6060;
+	font-size: 1.125rem;
+	font-weight: 500;
+	line-height: 142.6%;
+}
+
+.err404-link {
+	display: block;
+	margin-top: 5.5rem;
+	margin-bottom: 5.5rem;
+	color: #ff6060;
+	font-size: 0.875rem;
+	font-weight: 500;
+	line-height: 142.6%;
+	-webkit-text-decoration-line: underline;
+	text-decoration-line: underline;
+}
+
+.err404-title {
+	margin-top: 6rem;
+	margin-bottom: 0.6875rem;
+	color: #ff6060;
+	font-size: 6rem;
+	font-weight: 700;
+	line-height: 142.6%;
+}
+
+@media only screen and (min-width: 768px) {
+	.err404-title {
+		margin-top: 4rem;
+		margin-bottom: 2rem;
+		font-size: 14rem;
+		line-height: 100%;
+	}
+
+	.err404-subtitle-br {
+		display: none;
+	}
+
+	.err404-link {
+		margin-top: 5rem;
+		margin-bottom: 5rem;
+		font-size: 1.125rem;
+	}
+
+	.err404-subtitle {
+		font-size: 2.25rem;
+	}
+}

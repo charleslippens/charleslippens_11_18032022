@@ -1,0 +1,81 @@
+.tags-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.housing-title {
+	margin-top: 0.9375rem;
+	margin-bottom: 0;
+	color: #ff6060;
+	font-size: 1.125rem;
+	font-weight: 500;
+	line-height: 142.6%;
+}
+
+.housing-location {
+	margin-top: 0.3125rem;
+	margin-bottom: 0;
+	color: #ff6060;
+	font-size: 0.875rem;
+	font-weight: 500;
+	line-height: 142.6%;
+}
+
+@media only screen and (min-width: 768px) {
+	.informations-wrapper {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		justify-content: space-between;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+	}
+
+	.informations-wrapper .collapse__section {
+		width: 47%;
+		padding: 0;
+	}
+
+	.informations-wrapper .collapse {
+		border-radius: 0.625rem;
+	}
+
+	.informations-wrapper .collapse__title {
+		font-size: 1.125rem;
+	}
+
+	.informations-wrapper .collapse__icon {
+		margin-right: 0.75rem;
+	}
+
+	.informations-wrapper .collapse__text {
+		padding-top: 1.875rem;
+		padding-right: 1.25rem;
+		padding-bottom: 1.875rem;
+		padding-left: 1.25rem;
+		font-size: 1.125rem;
+	}
+	.housing-info-globale-wrapper {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		margin-top: 1.875rem;
+		margin-bottom: 1.625rem;
+	}
+
+	.housing-info-wrapper {
+		width: 60%;
+	}
+
+	.housing-title {
+		font-size: 2.25rem;
+	}
+
+	.housing-location {
+		margin-bottom: 1.25rem;
+		font-size: 1.125rem;
+	}
+}

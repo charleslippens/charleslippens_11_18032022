@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./style.css";
+import "../Styling/cardhousing.css";
 // Composant fonctionnel
 // Utilisation de props pour les cardhousing via Home
 function Cardhousing(props) {
