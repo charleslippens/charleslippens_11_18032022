@@ -1,4 +1,4 @@
-.slider {
+.carousel {
 	position: relative;
 	height: 15.9375rem;
 }
@@ -9,6 +9,27 @@
 	-o-object-fit: cover;
 	object-fit: cover;
 	border-radius: 0.625rem;
+}
+
+.slider {
+	-webkit-transform: scale(0.92);
+	-ms-transform: scale(0.92);
+	transform: scale(0.92);
+	opacity: 0;
+	-webkit-transition-duration: 1s ease;
+	-o-transition-duration: 1s ease;
+	transition-duration: 1s ease;
+}
+
+.slider.active {
+	width: 100%;
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+	-webkit-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	transition-duration: 1s;
 }
 
 .right-arrow,
@@ -33,7 +54,7 @@
 	left: 0.3125rem;
 }
 
-.slide {
+.slider {
 	-webkit-transform: scale(0.92);
 	-ms-transform: scale(0.92);
 	transform: scale(0.92);
@@ -43,7 +64,7 @@
 	transition-duration: 1s ease;
 }
 
-.slide.active {
+.slider.active {
 	width: 100%;
 	-webkit-transform: scale(1);
 	-ms-transform: scale(1);
@@ -55,7 +76,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-	.slider {
+	.carousel {
 		height: 25.9375rem;
 	}
 

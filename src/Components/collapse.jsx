@@ -10,10 +10,10 @@ function Collapse(props) {
 	const [setHeight, setHeightState] = useState("0px");
 	//Ceci définit l'état initial de la classe de rotation
 	const [setRotate, setRotateState] = useState("collapse__icon");
-	// Ceci définit le content sur une ref pour obtenir la contenu du contenu
+	// Ceci définit le content sur une ref pour obtenir la contenu de content (dom)
 	const content = useRef(null);
 
-	// La fonction bascule l'effondrement en changeant l'état actif, la hauteur et l'état de rotation
+	// La fonction bascule le collapse en changeant l'état actif, la hauteur et l'état de rotation
 
 	function togglecollapse() {
 		setActiveState(setActive === "" ? "active" : "");
