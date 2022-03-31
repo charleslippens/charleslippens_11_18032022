@@ -28,22 +28,20 @@ function Gallery({ images }) {
 		// Il s'agit de deux opérateurs ternaires qui vérifient si la longueur du tableau d'images est supérieure à 1. S'il est, alors il rendra la flèche. Sinon, il ne rendra pas la flèche.
 		<div className="carousel">
 			{length > 1 ? (
-				<img
-					src={Previous}
-					className="left-arrow"
-					onClick={previousImage}
-					alt="Previous Arrow"
-				/>
+				<img src={Previous} className="precedent" onClick={previousImage} alt="Precedent" />
 			) : null}
 			{length > 1 ? (
-				<img src={Next} className="right-arrow" onClick={nextImage} alt="Next Arrow" />
+				<img src={Next} className="suivant" onClick={nextImage} alt="Suivant" />
 			) : null}
+
 			{images.map((carousel, index) => {
+				//Utilisation de map() qui permet de prendre une liste de données et de la transformer en liste de composants
+				//Pour chaque entrée du tableau on retourne un élément
 				return (
-					//C'est un opérateur ternaire qui vérifie si l'index de l'image est égal à la valeur courante.Si c'est le cas, cela rendra la diapositive active. Sinon, il rendra la diapositive comme inactive. */
-					<div className={index === current ? "slider active" : "slider"} key={index}>
+					//C'est un opérateur ternaire qui vérifie si l'index de l'image est égal à la valeur courante. Si c'est le cas, cela rendra la slide active. Sinon, il rendra la slide comme inactive. */
+					<div>
 						{index === current && (
-							<img src={carousel} alt="travel img" className="image" />
+							<img src={carousel} alt="voyage img" className="image" />
 						)}
 					</div>
 				);
