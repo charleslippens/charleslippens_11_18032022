@@ -8,8 +8,8 @@ function Gallery({ images }) {
 	const [current, setCurrent] = useState(0);
 	const length = images.length;
 
-	//La fonction previousImage ne prend aucun paramètre et ne renvoie aucune valeur. Il définit la diapositive actuelle sur la diapositive précédente.
-	// Si la diapositive actuelle est 0, cela définit la diapositive actuelle sur la dernière diapositive.un
+	//La fonction previousImage ne prend aucun paramètre et ne renvoie aucune valeur. Il définit la slide  actuelle sur la slide précédente.
+	// Si la slide actuelle est 0, cela définit la slide actuelle sur la dernière diapositive
 	const previousImage = () => {
 		setCurrent(current === 0 ? length - 1 : current - 1);
 	};
@@ -36,9 +36,8 @@ function Gallery({ images }) {
 
 			{images.map((carousel, index) => {
 				//Utilisation de map() qui permet de prendre une liste de données et de la transformer en liste de composants
-				//Pour chaque entrée du tableau on retourne un élément
+				//Pour chaque entrée du tableau  on retourne un élément
 				return (
-					//C'est un opérateur ternaire qui vérifie si l'index de l'image est égal à la valeur courante. Si c'est le cas, cela rendra la slide active. Sinon, il rendra la slide comme inactive. */
 					<div>
 						{index === current && (
 							<img src={carousel} alt="voyage img" className="image" />

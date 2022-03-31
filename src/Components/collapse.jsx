@@ -35,6 +35,7 @@ function Collapse(props) {
 
 	return (
 		//Button est le du bouton utilisé pour basculer le collapse avec togglecollapse
+		// Utilisation de map pour retourner un élément pour chaque entrée du tableau contenu
 		<div className="collapse__section">
 			<button className={`collapse ${setActive}`} onClick={togglecollapse}>
 				<p className="collapse__title">{props.title}</p>
