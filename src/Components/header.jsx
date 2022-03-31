@@ -7,13 +7,13 @@ import "../Styling/header.css";
 function Header() {
 	return (
 		<header className="navlink-wrapper">
-			<Link to="/charleslippens_11_18032022/">
+			<Link to="/">
 				<img src={logo} alt="Kasa Logo" />
 			</Link>
 			<nav className="navlink">
 				<NavLink
 					className={({ isActive }) => (isActive ? "navlink-active" : "navlink-link")}
-					to="/charleslippens_11_18032022/"
+					to="/"
 				>
 					Accueil
 				</NavLink>
