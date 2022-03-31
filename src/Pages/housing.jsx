@@ -6,7 +6,6 @@ import housing from "../Data/logements.json";
 import Gallery from "../Components/gallery.jsx";
 import Tags from "../Components/tags.jsx";
 import Collapse from "../Components/collapse.jsx";
-import Rating from "../Components/rating.jsx";
 
 import "../Styling/housing.css";
 
