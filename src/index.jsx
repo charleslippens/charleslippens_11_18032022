@@ -16,7 +16,7 @@ ReactDOM.render(
 			<Header />
 			<Routes>
 				{/* Ceci est une définition de route. Il indique au routeur de faire correspondre l'URL `/` et de rendre le composant `<Home />`. */}
-				<Route exact path="/" element={<Home />} />
+				<Route exact path="/#/charleslippens_11_18032022/" element={<Home />} />
 				{/* Il indique au routeur de faire correspondre l'URL `/about` et de rendre le composant `<About />`. */}
 				<Route path="/about" element={<About />} />
 				{/* Il indique au routeur de faire correspondre l'URL `/housing/:housingId` et de rendre le composant `<housing />`. */}
