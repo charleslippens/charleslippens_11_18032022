@@ -19,7 +19,7 @@ function Home() {
 						// Utilisation de la prop key unique et stable
 						// Utiliser l'id associée à la donnée title dans le JSON
 						// identifie quels élements d'une liste ont changé, ont été ajoutés ou supprimés
-						key={`${housing.title}-${housing.id}`}
+						key={housing.id}
 						link={`/housing/${housing.id}`}
 						title={housing.title}
 						cover={housing.cover}

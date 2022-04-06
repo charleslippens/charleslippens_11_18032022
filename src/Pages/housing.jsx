@@ -6,6 +6,7 @@ import housing from "../Data/logements.json";
 import Gallery from "../Components/gallery.jsx";
 import Tags from "../Components/tags.jsx";
 import Collapse from "../Components/collapse.jsx";
+import Ratings from "../Components/ratings.jsx";
 
 import "../Styling/housing.css";
 
@@ -24,13 +25,14 @@ function Housing() {
 		if (thisHousing === undefined) {
 			return navigate("/Err404");
 		}
-		document.title = thisHousing.title + " - Kasa";
+		document.title = thisHousing.title + "Kasa";
 	}, [thisHousing, navigate]);
 
 	if (thisHousing === undefined) {
 		return null;
 	}
-
+	/* Splitting the name of the host into firstName and lastName. */
+	const [firstName, lastName] = thisHousing.host.name.split(" ");
 	return (
 		<section>
 			<Gallery images={thisHousing.pictures} />
@@ -47,10 +49,21 @@ function Housing() {
 					</div>
 				</div>
 
-				<div className="informations-wrapper">
-					<Collapse title="Description" content={thisHousing.description} />
-					<Collapse title="Équipements" content={thisHousing.equipments} />
+				<div className="rating-host-wrapper">
+					<Ratings rating={thisHousing.rating} />
+					<div className="host-wrapper">
+						<div className="host-name">
+							{firstName}
+							<br />
+							{lastName}
+						</div>
+						<img className="host-picture" src={thisHousing.host.picture} alt="Host" />
+					</div>
 				</div>
+			</div>
+			<div className="informations-wrapper">
+				<Collapse title="Description" content={thisHousing.description} />
+				<Collapse title="Équipements" content={thisHousing.equipments} />
 			</div>
 		</section>
 	);
