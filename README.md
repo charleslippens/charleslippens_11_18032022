@@ -1,13 +1,15 @@
 ## Développez une application Web avec React et React Router
 
 
-- Initilisation Create React App
+- Initilisation Create React App OK
 - Développement Home page (structure, développemnt des composants, page, styles CSS, responsive etc...) OK
 - Développement des pages A Propos, Erreur 404 et des composants fonctionnels associés(collapse) OK
 - Mis en place de GitPage pour une app React : https://charleslippens.github.io/charleslippens_11_18032022/
-- Développement de la page housing (annonce logement, composant fonctionnel gallery OK) EN COURS 
-- Utilisation SASS (variables SCSS)? A FAIRE
-- Optimisation et amélioration des states, hooks, props, gestion d'événements, routes, structure etc.. ?
+- Développement de la page housing (annonce logement, composant fonctionnel etc ) OK
+
+- Utilisation SASS (variables, .scss, etc) ,
+- Optimisation et amélioration des states, hooks, props, gestion d'événements, routes, structure globale etc.. ?
+- Optimisation gestion des erreurs et fetch?
 
 
 ##  Outils et contraintes techniques
