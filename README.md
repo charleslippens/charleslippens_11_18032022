@@ -4,17 +4,26 @@
 - Initilisation Create React App OK
 - Développement Home page (structure, développemnt des composants, page, styles CSS, responsive etc...) OK
 - Développement des pages A Propos, Erreur 404 et des composants fonctionnels associés(collapse) OK
-- Mis en place de GitPage pour une app React : https://charleslippens.github.io/charleslippens_11_18032022/
+- Mise en place de GitPage pour une app React : https://charleslippens.github.io/charleslippens_11_18032022/
 - Développement de la page housing (annonce logement, composant fonctionnel etc ) OK
 
-- Utilisation SASS (variables, .scss, etc) ,
-- Optimisation et amélioration des states, hooks, props, gestion d'événements, routes, structure globale etc.. ?
-- Optimisation gestion des erreurs et fetch?
+Optimisations en cours:
+- Utilisation SASS (variables, indentation .scss, etc) ou style-css components?
+- Optimisation et amélioration des states, hooks, props, proptypes, gestion d'événements, routes, structure globale etc.. ?
+- Hooks: UseEffect, UseState, UseRef, UseContext etc
+- Optimisation keys props
+- Optimisation gestion des erreurs 
+- get data avec un fetch pou simuler une API dans router? avec des hooks et Fetch en tant que service
 
 
 ##  Outils et contraintes techniques
 
 https://course.oc-static.com/projects/Front-End+V2/P9+React+1/Coding+guidelines+Kasa+FR.pdf
+
+- Utilisation de state entre différents composants, state locale avec UserState
+- Déclenchez les effets avec UserEffect
+- Intéragir avec les composants grace aux événements
+- Utilisations listes et conditions: map(), ternaire
 
 ##  Getting Started with Create React App
 
