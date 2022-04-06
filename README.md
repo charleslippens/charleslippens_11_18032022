@@ -12,8 +12,8 @@ Optimisations en cours:
 - Optimisation et amélioration des states, hooks, props, proptypes, gestion d'événements, routes, structure globale etc.. ?
 - Hooks: UseEffect, UseState, UseRef, UseContext etc
 - Optimisation keys props
-- Optimisation gestion des erreurs 
-- get data avec un fetch pou simuler une API dans router? avec des hooks et Fetch en tant que service
+- Optimisation gestion des erreurs, loading (cf cours)
+- get data avec un fetch pour simuler une API dans router? avec des hooks et Fetch en tant que service
 
 
 ##  Outils et contraintes techniques
