@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/charleslippens_11_18032022/static/css/main.4fd20b49.css",
-    "main.js": "/charleslippens_11_18032022/static/js/main.3ab8fd1b.js",
+    "main.css": "/charleslippens_11_18032022/static/css/main.16a65508.css",
+    "main.js": "/charleslippens_11_18032022/static/js/main.d1c74f00.js",
     "static/media/About_banner.jpg": "/charleslippens_11_18032022/static/media/About_banner.434ba524c88681a7754d.jpg",
     "static/media/Home_banner.jpg": "/charleslippens_11_18032022/static/media/Home_banner.8dbc3e4ffb4f7b0b3bc8.jpg",
     "static/media/Logo_Kasa.svg": "/charleslippens_11_18032022/static/media/Logo_Kasa.a6101328193bb3191cbcb50c120ec0d1.svg",
@@ -10,11 +10,13 @@
     "static/media/Arrow_down.svg": "/charleslippens_11_18032022/static/media/Arrow_down.b052dd29e3a2bab76700eee79e133c37.svg",
     "static/media/Apres.svg": "/charleslippens_11_18032022/static/media/Apres.88153a5d119c2744ffe34dca1ef843df.svg",
     "static/media/Avant.svg": "/charleslippens_11_18032022/static/media/Avant.19918a1634b1441a25ae0b50e6b1f85b.svg",
-    "main.4fd20b49.css.map": "/charleslippens_11_18032022/static/css/main.4fd20b49.css.map",
-    "main.3ab8fd1b.js.map": "/charleslippens_11_18032022/static/js/main.3ab8fd1b.js.map"
+    "static/media/star_empty.svg": "/charleslippens_11_18032022/static/media/star_empty.7e4ba6032d7d80ecc30aa389973cef95.svg",
+    "static/media/star_full.svg": "/charleslippens_11_18032022/static/media/star_full.6430150c126a3adf92c132c52c9c7428.svg",
+    "main.16a65508.css.map": "/charleslippens_11_18032022/static/css/main.16a65508.css.map",
+    "main.d1c74f00.js.map": "/charleslippens_11_18032022/static/js/main.d1c74f00.js.map"
   },
   "entrypoints": [
-    "static/css/main.4fd20b49.css",
-    "static/js/main.3ab8fd1b.js"
+    "static/css/main.16a65508.css",
+    "static/js/main.d1c74f00.js"
   ]
 }
