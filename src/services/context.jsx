@@ -17,7 +17,7 @@ export const AnnoncesProvider = ({ children }) => {
 	useEffect(() => {
 		setLoading(true);
 		/* Fetching the data from the database. */
-		fetch(window.location.origin + "/Data/logements.json")
+		fetch(window.location.origin + "/logements.json")
 			.then((response) => {
 				if (response.ok) {
 					return response.json();
