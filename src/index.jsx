@@ -1,10 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Routerr from "./services/router.jsx";
+import Routing from "./services/router.jsx";
 
+import { HousingProvider } from "./Context/context.jsx";
+
+/* Rendering the App component into the root element of the index.html file. */
 ReactDOM.render(
-	<React.StrictMode>
-		<Routerr />
-	</React.StrictMode>,
+	<HousingProvider>
+		<Routing />
+	</HousingProvider>,
 	document.getElementById("root")
 );
