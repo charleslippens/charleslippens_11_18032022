@@ -1,21 +1,3 @@
-## Développez une application Web avec React et React Router
-
-
-- Initilisation Create React App OK
-- Développement Home page (structure, développemnt des composants, page, styles CSS, responsive etc...) OK
-- Développement des pages A Propos, Erreur 404 et des composants fonctionnels associés(collapse) OK
-- Mis en place de GitPage pour une app React : https://charleslippens.github.io/charleslippens_11_18032022/
-- Développement de la page housing (annonce logement, composant fonctionnel etc ) OK
-
-- Utilisation SASS (variables, .scss, etc) ,
-- Optimisation et amélioration des states, hooks, props, gestion d'événements, routes, structure globale etc.. ?
-- Optimisation gestion des erreurs et fetch?
-
-
-##  Outils et contraintes techniques
-
-https://course.oc-static.com/projects/Front-End+V2/P9+React+1/Coding+guidelines+Kasa+FR.pdf
-
 ##  Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -28,7 +10,7 @@ Install packages and dependencies
 
 In the project directory, you can run:
 
-### `npm start` root directory ./charleslippens_11_18032022
+### `npm start` on root front directory ./charleslippens_11_18032022
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
