@@ -8,15 +8,14 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Installing and running the project
 
-### `npm install` on front folder (root front folder/directory)
+### Clone or download the repository onto your computer
 
-Install packages and dependencies
+### Inside this repository, install the packages/dependencies : `npm install` or `yarn install` on front folder
 
-In the project directory, you can run:
 
-### `npm start` on root front directory ./charleslippens_11_18032022
+### In the project directory, you can run:`npm start` or `yarn start` on root front directory ./charleslippens_11_18032022
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
