@@ -8,7 +8,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Démonstration application web : https://charleslippens-11-18032022-9uq2n8119-charleslippens.vercel.app/
+Démonstration application web : https://charleslippens-11-18032022.vercel.app/
 
 ## Installing and running the project
 
