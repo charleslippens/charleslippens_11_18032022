@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "../Pages/home.jsx";
 import About from "../Pages/about.jsx";
@@ -13,7 +13,7 @@ import "../style.css";
 function Routing() {
 	return (
 		<React.StrictMode>
-			<Router>
+			<BrowserRouter>
 				<Header />
 				<Routes>
 					{/* Ceci est une définition de route. Il indique au routeur de faire correspondre l'URL `/` et de rendre le composant `<Home />`. */}
@@ -41,7 +41,7 @@ function Routing() {
 					{/* Il indique au routeur de faire correspondre n'importe quelle URL et de rendre le composant `<Error404 />`. */}
 					<Route path="*" element={<Error404 />} />
 				</Routes>
-			</Router>
+			</BrowserRouter>
 
 			<Footer />
 		</React.StrictMode>
