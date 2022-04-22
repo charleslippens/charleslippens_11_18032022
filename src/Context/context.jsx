@@ -7,11 +7,21 @@ export const HousingProvider = ({ children }) => {
 		housings,
 		setHousing,
 	] = useState([]);
+
 	const [idAnnonce, setIdAnnonce] = useState(false);
-	/* Creating a state variable `error404` and initializing it with `false`. */
-	const [error404, setError404] = useState(false);
+	/* Création d'une variable d'état `error404` et initialisation avec `false`. */ const [
+		error404,
+		setError404,
+	] = useState(false);
+	/* Création d'une variable d'état `error` et initialisation avec `false`. */
+	const [error, setError] = useState(false);
+	/* Création d'une variable d'état `loading` et initialisation avec `true`. */ const [
+		load,
+		setLoad,
+	] = useState(false);
 
 	useEffect(() => {
+		setLoad(true);
 		/* Récupération des données de la base de données. */ fetch(
 			window.location.origin + "/housings.json"
 		)
@@ -24,9 +34,11 @@ export const HousingProvider = ({ children }) => {
 			.then((data) => {
 				/* Définition de la variable d'état `annonces` à la valeur de l'argument `data`. */
 				setHousing(data);
+				setLoad(false);
 			})
 			.catch((error) => {
 				console.error("Error fetching data:", error);
+				setError(true);
 			});
 	}, []);
 
@@ -39,6 +51,10 @@ export const HousingProvider = ({ children }) => {
 				setError404,
 				idAnnonce,
 				setIdAnnonce,
+				error,
+				setError,
+				load,
+				setLoad,
 			}}
 		>
 			{children}

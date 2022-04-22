@@ -10,7 +10,7 @@ import Ratings from "../Components/ratings.jsx";
 import "../Styling/housing.css";
 
 function Housing() {
-	const { housings, setError404, setIdAnnonce } = useContext(HousingContext);
+	const { housings, setIdAnnonce, setError404 } = useContext(HousingContext);
 	/* Obtention de l'identifiant de l'annonce à partir de l'URL. */ const { housingId } =
 		useParams();
 	/* Recherche de l'annonce avec l'identifiant qui se trouve dans l'URL. */ const thisHousing =

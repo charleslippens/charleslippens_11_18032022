@@ -8,11 +8,13 @@ import Error404 from "../Pages/error404.jsx";
 import Header from "../Components/header.jsx";
 import Footer from "../Components/footer.jsx";
 import { HousingContext } from "../Context/context.jsx";
+import Load from "../Components/loading.jsx";
+import Error from "../Components/error404.jsx";
 
 import "../style.css";
 
 function Routing() {
-	const { error404 } = useContext(HousingContext);
+	const { error, load, error404 } = useContext(HousingContext);
 
 	return (
 		<React.StrictMode>
@@ -26,6 +28,7 @@ function Routing() {
 						element={
 							<>
 								<Home />
+								{(!error && load && <Load />) || (error && load && <Error />)}
 							</>
 						}
 					/>{" "}
@@ -38,7 +41,9 @@ function Routing() {
 						element={
 							<>
 								<Housing />
-								{error404 && <Error404 />}
+								{(!error && load && <Load />) ||
+									(error && load && <Error />) ||
+									(error404 && !load && !error && <Error404 />)}
 							</>
 						}
 					/>{" "}

@@ -1,4 +1,4 @@
-import { useEffect, useContext } from "react";
+import { useState, useEffect, useContext } from "react";
 
 import { HousingContext } from "../Context/context.jsx";
 
@@ -7,7 +7,7 @@ import Error from "../Components/error404.jsx";
 function Error404() {
 	const { idAnnonce, setError404 } = useContext(HousingContext);
 
-	/* Setting the title of the page. */
+	/* Définition du titre de la page. */
 	document.title = "404 - Kasa";
 
 	useEffect(() => {
@@ -17,9 +17,22 @@ function Error404() {
 		return () => setError404(false);
 	}, [setError404, idAnnonce]);
 
-	return (
-		<Error title="404" subtitle="Oups! La page que " subtitle2="vous demandez n'existe pas." />
-	);
+	const [show, setShow] = useState(false);
+
+	useEffect(() => {
+		/* Définit un délai d'attente pour retarder l'affichage du composant de chargement. */
+		const timeShow = setTimeout(() => {
+			setShow(true);
+		}, 10);
+		return () => {
+			clearTimeout(timeShow);
+		};
+	}, []);
+
+	if (!show) {
+		return null;
+	}
+	return <Error title="404" sub="Oups! La page que " sub2="vous demandez n'existe pas." />;
 }
 
 export default Error404;
