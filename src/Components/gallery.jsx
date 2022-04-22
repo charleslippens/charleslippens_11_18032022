@@ -38,13 +38,8 @@ function Gallery({ images }) {
 				//Utilisation de map() qui permet de prendre une liste de données et de la transformer en liste de composants
 				//Pour chaque entrée du tableau  on retourne un élément
 				return (
-					<div
-						className={index === current ? "slider active" : "slider"}
-						key={`carousel-${index}`}
-					>
-						{index === current && (
-							<img src={carousel} alt="voyage img" className="image" />
-						)}
+					<div>
+						{index === current && <img src={carousel} alt="img" className="image" />}
 					</div>
 				);
 			})}

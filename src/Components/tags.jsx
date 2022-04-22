@@ -1,7 +1,6 @@
 import "../Styling/tags.css";
 
-function Tag({ tagName }) {
+function Tags({ tagName }) {
 	return <div className="tags">{tagName}</div>;
 }
-
-export default Tag;
+export default Tags;

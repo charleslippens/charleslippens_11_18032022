@@ -11,10 +11,10 @@ import "../Styling/housing.css";
 
 function Housing() {
 	const { housings, setIdAnnonce, setError404 } = useContext(HousingContext);
-	/* Obtention de l'identifiant de l'annonce à partir de l'URL. */ const { housingId } =
-		useParams();
-	/* Recherche de l'annonce avec l'identifiant qui se trouve dans l'URL. */ const thisHousing =
-		housings.find((housing) => housing.id === housingId);
+	/* Obtention de l'identifiant de l'annonce à partir de l'URL. */
+	const { housingId } = useParams();
+	/* Recherche de l'annonce avec l'identifiant qui se trouve dans l'URL. */
+	const thisHousing = housings.find((housing) => housing.id === housingId);
 
 	useEffect(() => {
 		setIdAnnonce(thisHousing);
@@ -25,8 +25,8 @@ function Housing() {
 	if (!thisHousing) {
 		return null;
 	} else {
-		/* Division du nom de l'hôte en firstName et lastName. */ const [firstName, lastName] =
-			thisHousing.host.name.split(" ");
+		/* Division du nom de l'hôte en firstName et lastName. */
+		const [firstName, lastName] = thisHousing.host.name.split(" ");
 		document.title = thisHousing.title + " - Kasa";
 
 		return (
