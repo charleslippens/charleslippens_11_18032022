@@ -5,6 +5,8 @@ import Collapse from "../Components/collapse.jsx";
 import "../Styling/about.css";
 
 function About() {
+	document.title = "A Propos - Kasa";
+
 	const aboutData = [
 		{
 			title: "Fiabilité",
