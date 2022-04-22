@@ -1,16 +1,23 @@
+##  OPENCLASSROOMS PROJET 11 : Kasa
+
+![Alt text](https://user.oc-static.com/upload/2020/08/14/15974111893356_Screen%20Shot%202020-07-08%20at%2018.17.37%20%281%29.jpg "Optional title")
+
+
+
 ##  Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Démonstration application web : https://charleslippens-11-18032022.vercel.app/
 
-### `npm install` on front folder (root front folder/directory)
+## Installing and running the project
 
-Install packages and dependencies
+### Clone or download the repository onto your computer
 
-In the project directory, you can run:
+### Inside this repository, install the packages/dependencies : `npm install` or `yarn install` on front folder
 
-### `npm start` on root front directory ./charleslippens_11_18032022
+
+### In the project directory, you can run:`npm start` or `yarn start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
