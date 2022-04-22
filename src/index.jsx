@@ -4,7 +4,7 @@ import Routing from "./services/router.jsx";
 
 import { HousingProvider } from "./Context/context.jsx";
 
-/* Rendering the App component into the root element of the index.html file. */
+/* Rendering the routing component into the root element of the index.html file. */
 ReactDOM.render(
 	<HousingProvider>
 		<Routing />

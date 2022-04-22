@@ -41,9 +41,8 @@ function Routing() {
 					{/* Il indique au routeur de faire correspondre n'importe quelle URL et de rendre le composant `<Error404 />`. */}
 					<Route path="*" element={<Error404 />} />
 				</Routes>
+				<Footer />
 			</BrowserRouter>
-
-			<Footer />
 		</React.StrictMode>
 	);
 }
