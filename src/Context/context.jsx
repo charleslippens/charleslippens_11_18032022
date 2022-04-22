@@ -7,6 +7,9 @@ export const HousingProvider = ({ children }) => {
 		housings,
 		setHousing,
 	] = useState([]);
+	const [idAnnonce, setIdAnnonce] = useState(false);
+	/* Creating a state variable `error404` and initializing it with `false`. */
+	const [error404, setError404] = useState(false);
 
 	useEffect(() => {
 		/* Récupération des données de la base de données. */ fetch(
@@ -32,6 +35,10 @@ export const HousingProvider = ({ children }) => {
 			value={{
 				housings,
 				setHousing,
+				error404,
+				setError404,
+				idAnnonce,
+				setIdAnnonce,
 			}}
 		>
 			{children}

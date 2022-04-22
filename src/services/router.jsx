@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "../Pages/home.jsx";
@@ -7,10 +7,13 @@ import Housing from "../Pages/housing.jsx";
 import Error404 from "../Pages/error404.jsx";
 import Header from "../Components/header.jsx";
 import Footer from "../Components/footer.jsx";
+import { HousingContext } from "../Context/context.jsx";
 
 import "../style.css";
 
 function Routing() {
+	const { error404 } = useContext(HousingContext);
+
 	return (
 		<React.StrictMode>
 			<BrowserRouter>
@@ -35,6 +38,7 @@ function Routing() {
 						element={
 							<>
 								<Housing />
+								{error404 && <Error404 />}
 							</>
 						}
 					/>{" "}

@@ -1,5 +1,5 @@
 import { useEffect, useContext } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { HousingContext } from "../Context/context.jsx";
 
 import Gallery from "../Components/gallery.jsx";
@@ -10,25 +10,25 @@ import Ratings from "../Components/ratings.jsx";
 import "../Styling/housing.css";
 
 function Housing() {
-	const { housings } = useContext(HousingContext);
+	const { housings, setError404, setIdAnnonce } = useContext(HousingContext);
 	/* Obtention de l'identifiant de l'annonce à partir de l'URL. */ const { housingId } =
 		useParams();
 	/* Recherche de l'annonce avec l'identifiant qui se trouve dans l'URL. */ const thisHousing =
 		housings.find((housing) => housing.id === housingId);
-	let navigate = useNavigate();
 
 	useEffect(() => {
-		if (thisHousing === undefined) {
-			return navigate("/Err404");
+		setIdAnnonce(thisHousing);
+		if (!thisHousing) {
+			setError404(true);
 		}
-		document.title = thisHousing.title + "Kasa";
-	}, [thisHousing, navigate]);
-
-	if (thisHousing === undefined) {
+	}, [setIdAnnonce, setError404, thisHousing]);
+	if (!thisHousing) {
 		return null;
 	} else {
 		/* Division du nom de l'hôte en firstName et lastName. */ const [firstName, lastName] =
 			thisHousing.host.name.split(" ");
+		document.title = thisHousing.title + " - Kasa";
+
 		return (
 			<section>
 				<Gallery images={thisHousing.pictures} />
@@ -69,5 +69,4 @@ function Housing() {
 		);
 	}
 }
-
 export default Housing;
