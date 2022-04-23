@@ -3,7 +3,7 @@ import React, { useState, createContext, useEffect } from "react";
 export const HousingContext = createContext();
 
 export const HousingProvider = ({ children }) => {
-	/* Création d'une variable d'état `annonces` et initialisation avec un tableau vide. */ const [
+	/* Création d'une variable d'état `housings` et initialisation avec un tableau vide. */ const [
 		housings,
 		setHousing,
 	] = useState([]);
@@ -15,7 +15,7 @@ export const HousingProvider = ({ children }) => {
 	] = useState(false);
 	/* Création d'une variable d'état `error` et initialisation avec `false`. */
 	const [error, setError] = useState(false);
-	/* Création d'une variable d'état `loading` et initialisation avec `true`. */ const [
+	/* Création d'une variable d'état `load` et initialisation avec `true`. */ const [
 		load,
 		setLoad,
 	] = useState(false);
@@ -32,7 +32,7 @@ export const HousingProvider = ({ children }) => {
 				throw response;
 			})
 			.then((data) => {
-				/* Définition de la variable d'état `annonces` à la valeur de l'argument `data`. */
+				/* Définition de la variable d'état `setHousing` à la valeur de l'argument `data`. */
 				setHousing(data);
 				setLoad(false);
 			})
